@@ -1,6 +1,6 @@
 function About() {
     return (
-        <section className="about flex relative w-[calc(100%-301px)] left-75 bg-[#2a2a2a]">
+        <section id="about" className="flex relative w-[calc(100%-301px)] left-75 bg-[#2a2a2a]">
             <div className="flex mx-auto items-center gap-10 py-24">
                 {/* Image */}
                 <img src="/images/about-me.jpg" 
