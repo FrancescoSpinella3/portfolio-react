@@ -1,6 +1,6 @@
 function SideBar() {
     return (
-        <aside className="bg-[#101010] h-screen w-80 p-5 flex items-center fixed">
+        <aside className="bg-[#101010] h-screen w-80 p-5 flex items-center fixed border-r border-zinc-800">
             <div className="container-sidebar flex flex-col items-start justify-center gap-12 pl-12">
                 {/* Logo */}
                 <img
@@ -12,8 +12,8 @@ function SideBar() {
                     <li><a href="/">Home</a></li>
                     <li><a href="#about">Chi sono</a></li>
                     <li><a href="#career">Carriera</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="">Servizi</a></li>
-                    <li><a href="">Skills</a></li>
                     <li><a href="">Progetti</a></li>
                 </ul>
             </div>

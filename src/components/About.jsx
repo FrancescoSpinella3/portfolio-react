@@ -1,13 +1,13 @@
 function About() {
     return (
-        <section id="about" className="flex relative w-[calc(100%-301px)] left-75 bg-[#2a2a2a]">
+        <section id="about" className="flex relative w-[calc(100%-320px)] ml-80 bg-[#2a2a2a]">
             <div className="flex mx-auto items-center gap-10 py-24">
                 {/* Image */}
                 <img src="/images/about-me.jpg" 
                     alt="Foto profilo"
                     loading="lazy"
                     draggable="false"
-                    className="h-125 rounded-md shadow-xl"
+                    className="h-125 w-auto rounded-md shadow-xl"
                 />
                 {/* Description */}
                 <div className="description max-w-lg flex flex-col gap-7 text-white text-lg">
