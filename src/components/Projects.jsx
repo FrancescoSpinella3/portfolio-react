@@ -1,4 +1,4 @@
-import ProjectItem from "./ProjectCard"
+import ProjectCard from "./ProjectCard"
 
 function Projects() {
     const projects = [
@@ -20,7 +20,9 @@ function Projects() {
 
                 {/* Projects container */}
                 <div className="projects-container grid grid-cols-3 gap-5">
-
+                    {projects.map((p) => (
+                        <ProjectCard key={p.name} {...p} />
+                    ))}
                 </div>
             </div>
         </div>
