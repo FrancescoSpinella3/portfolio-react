@@ -1,6 +1,16 @@
 import ProjectItem from "./ProjectCard"
 
 function Projects() {
+    const projects = [
+        {
+            name: "Gioiosa Futsal", 
+            preview: "/images/gioiosa-futsal-preview.jpg", 
+            descritpion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti veniam magnam, et nobis deserunt fugiat?", 
+            gitHubLink: "https://github.com/FrancescoSpinella3/Gioiosa_Futsal.git", 
+            webSiteLink: "https://gioiosafutsal.it/"
+        }
+    ];
+
     return (
         <div id="projects" className="relative ml-80 w-[calc(100%-320px)] bg-[#151515] flex flex-col items-center p-24 gap-20">
             {/* Heading projects */}
