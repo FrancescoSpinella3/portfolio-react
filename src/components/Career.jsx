@@ -10,14 +10,12 @@ function Career() {
                 <p className="text-gray-300">La mia formazione ed esperienze lavorative</p>
             </div>
 
-            {/* Education container  */}
+            {/* Education */}
             <Education />
 
 
-            {/* Work experiences container  */}
-            <div className="experience">
-                <Experiences />
-            </div>
+            {/* Work experiences */}
+            <Experiences />
         </section>
     );
 }

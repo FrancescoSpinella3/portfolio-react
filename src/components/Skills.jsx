@@ -1,4 +1,4 @@
-import Skill from "./Skill";
+import Skill from "./SkillItem";
 
 function Skills() {
     const skills = [
@@ -6,18 +6,18 @@ function Skills() {
         {name: "CSS", src: "/images/logo-css.png", alt: "CSS"},
         {name: "Javascript", src: "/images/logo-js.png", alt: "Javascript"},
         {name: "React JS", src: "/images/logo-react.png", alt: "React JS"},
+        {name: "Tailwind CSS", src: "/images/logo-tailwind.png", alt: "Tailwind CSS"},
         {name: "Python", src: "/images/logo-python.png", alt: "Python"},
         {name: "Java", src: "/images/logo-java.png", alt: "Java"},
         {name: "SQL", src: "/images/logo-sql.png", alt: "SQL"},
         {name: "MongoDB", src: "/images/logo-mongodb.png", alt: "MongoDB"},
         {name: "VS Code", src: "/images/logo-vs.png", alt: "Visual Studio Code"},
-        {name: "Tailwind CSS", src: "/images/logo-tailwind.png", alt: "Tailwind CSS"},
 
     ];
 
 
     return (
-        <section id="skills" className="relative ml-80 w-[calc(100%-320px)] bg-[#2a2a2a] flex flex-col items-center p-24 gap-20">
+        <section id="skills" className="relative ml-80 w-[calc(100%-320px)] bg-[#1b1b1b] flex flex-col items-center p-24 gap-20">
             {/* Heading skills */}
             <div className="heading-skills text-center">
                 <h2 className="text-white font-bold text-4xl mb-4">Skills</h2>

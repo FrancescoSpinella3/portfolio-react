@@ -1,6 +1,6 @@
 function Experiences() {
     return (
-        <div className="education bg-[#1b1b1b] flex flex-col justify-start p-14 text-white w-5xl mx-auto rounded-md">
+        <div className="experiences bg-[#1b1b1b] flex flex-col justify-start p-14 text-white w-5xl mx-auto rounded-md">
             <h3 className="font-bold text-4xl flex gap-5 items-center pb-8 border-b border-zinc-800">
                 Esperienze
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">

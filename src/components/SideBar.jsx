@@ -13,8 +13,8 @@ function SideBar() {
                     <li><a href="#about">Chi sono</a></li>
                     <li><a href="#career">Carriera</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Progetti</a></li>
                     <li><a href="">Servizi</a></li>
-                    <li><a href="">Progetti</a></li>
                 </ul>
             </div>
         </aside>
