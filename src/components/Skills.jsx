@@ -29,7 +29,6 @@ function Skills() {
                 {skills.map((s) => (
                     <Skill key={s.name} {...s} />
                 ))}
-
             </div>
         </section>
     );
