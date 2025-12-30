@@ -11,8 +11,9 @@ function App() {
 
   return (
     <>
+      <SideBar />
+      
       <main>
-        <SideBar />
 
         <Hero />
 

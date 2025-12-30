@@ -1,6 +1,8 @@
+// SISTEMARE LAYOUT 
+
 function Education() {
     return (
-        <div className="education bg-[#1b1b1b] flex flex-col justify-start p-14 text-white w-5xl mx-auto rounded-md">
+        <div className="education bg-[#1b1b1b] flex flex-col p-14 text-white w-5xl mx-auto rounded-md">
             <h3 className="font-bold text-4xl flex gap-5 items-center pb-8 border-b border-zinc-800">
                 Formazione
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-10">
@@ -25,7 +27,7 @@ function Education() {
             </div>
 
             <div className="education flex gap-48 py-7 pb-0">
-                <p className="text-gray-300">Sett 2014 - Giu 2019</p>
+                <p className="text-gray-300">Set 2014 - Giu 2019</p>
                 <div>
                     <p className="text-2xl font-semibold">Amministrazione finanza e marketing</p>
                     <p className="text-gray-300">IIS Borghese Faranda, <span className="text-white font-semibold">Patti (ME)</span></p>

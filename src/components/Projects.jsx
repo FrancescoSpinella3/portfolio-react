@@ -5,9 +5,18 @@ function Projects() {
         {
             name: "Gioiosa Futsal", 
             preview: "/images/gioiosa-futsal-preview.jpg", 
-            descritpion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti veniam magnam, et nobis deserunt fugiat?", 
+            description: "Sito ufficiale dell’A.S.D. Polisportiva Gioiosa Futsal, sezione dedicata al calcio a 5 della società sportiva dilettantistica Polisportiva Gioiosa. Il portale presenta informazioni istituzionali del club, il calendario completo, classifica aggiornata del campionato e la storia della squadra. Il progetto è stato sviluppato in HTLM5, Tailwind CSS e Javascript vanilla, successivamente ospitato su Siteground.", 
+            gitHubLink: "https://github.com/FrancescoSpinella3/Gioiosa_Futsal.git",
+            webSiteLink: "https://gioiosafutsal.it/",
+            type: "Sito web"
+        },
+        {
+            name: "Portfolio", 
+            preview: "/images/portfolio-preview.jpg", 
+            description: "Portfolio personale sviluppato con React e Tailwind CSS, progettato per presentare in modo chiaro e moderno i miei progetti e le mie competenze. L’interfaccia è responsive e performante, con un design essenziale e particolare attenzione alla user experience e alla struttura di componenti riutilizzabili.", 
             gitHubLink: "https://github.com/FrancescoSpinella3/Gioiosa_Futsal.git", 
-            webSiteLink: "https://gioiosafutsal.it/"
+            webSiteLink: "",
+            type: "Sito web"
         }
     ];
 
@@ -15,18 +24,23 @@ function Projects() {
         <div id="projects" className="relative ml-80 w-[calc(100%-320px)] bg-[#151515] flex flex-col items-center p-24 gap-20">
             {/* Heading projects */}
             <div className="heading-skills text-center">
-                <h2 className="text-white font-bold text-4xl mb-4">Progetti</h2>
+                <h2 className="text-white font-bold text-5xl mb-4">Progetti</h2>
                 <p className="text-gray-300">Alcuni dei miei progetti</p>
+            </div>
 
-                {/* Projects container */}
-                <div className="projects-container grid grid-cols-3 gap-5">
-                    {projects.map((p) => (
-                        <ProjectCard key={p.name} {...p} />
-                    ))}
-                </div>
+            {/* Projects container */}
+            <div className="projects-container flex flex-wrap gap-10">
+                {projects.map((p) => (
+                    <ProjectCard key={p.name} {...p} />
+                ))}
             </div>
         </div>
     );
 }
 
 export default Projects;
+
+// Sito ufficiale dell’A.S.D. Polisportiva Gioiosa Futsal, la sezione dedicata al calcio a 5 
+// della società sportiva dilettantistica dell’A.S.D. Polisportiva Gioiosa. Il portale presenta informazioni istituzionali del club, 
+// il calendario completo e la classifica aggiornata del campionato, la storia della squadra. Il progetto è stato sviluppato in HTLM5, Tailwind CSS E Javascript vanilla,
+// successivamente ospitato su Siteground.
