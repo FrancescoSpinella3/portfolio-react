@@ -1,3 +1,5 @@
+// SISTEMARE LAYOUT
+
 import Skill from "./SkillItem";
 
 function Skills() {
