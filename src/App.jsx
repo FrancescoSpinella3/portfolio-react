@@ -19,11 +19,11 @@ function App() {
 
         <About />
 
-        <Career />
-
         <Skills />
 
         <Projects />
+
+        <Career />
 
       </main>
     </>
