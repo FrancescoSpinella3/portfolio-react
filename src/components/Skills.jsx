@@ -19,7 +19,7 @@ function Skills() {
                 </svg>
             ),
             name: "Altri linguaggi",
-            description: "Esperienza base nei linguaggi di programmazione: Java, Python, C",
+            description: "Esperienza base nei linguaggi di programmazione: Java, Python",
         },
 
         {

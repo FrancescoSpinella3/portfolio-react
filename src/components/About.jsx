@@ -15,10 +15,10 @@ function About() {
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                     </div>
                     <h2 className="text-5xl font-bold">Chi sono</h2>
-                    <p className="text-gray-300 mb-3">Sono un Junior Frontend Developer con la passione per la tecnologia e l’informatica che mi accompagna sin da ragazzino.
+                    <p className="text-zinc-300 mb-3">Sono un Junior Frontend Developer con la passione per la tecnologia e l’informatica che mi accompagna sin da ragazzino.
                         <br /> <br />  
                         Amo sviluppare siti web moderni e responsive, unendo design accattivanti a prestazioni ottimali
-                        e garantendo un'esperienza accessibile per tutti. Ho una solida base in HTML, CSS e JavaScript, 
+                        e garantendo un'esperienza accessibile per tutti. Ho una solida base in HTML, CSS, JavaScript e React, 
                         e sono sempre motivato a crescere, affrontare nuove sfide e imparare qualcosa di nuovo ogni giorno.
                     </p>
 

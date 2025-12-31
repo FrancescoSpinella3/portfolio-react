@@ -7,7 +7,7 @@ function Career() {
             {/* Heading career */}
             <div className="heading-career text-center">
                 <h2 className="text-white font-bold text-5xl mb-4">Carriera</h2>
-                <p className="text-gray-300">La mia formazione ed esperienze lavorative</p>
+                <p className="text-zinc-300">La mia formazione ed esperienze lavorative</p>
             </div>
 
             {/* Education */}
