@@ -29,7 +29,7 @@ function Projects() {
             </div>
 
             {/* Projects container */}
-            <div className="projects-container flex flex-wrap gap-10">
+            <div className="projects-container flex flex-wrap gap-7">
                 {projects.map((p) => (
                     <ProjectCard key={p.name} {...p} />
                 ))}

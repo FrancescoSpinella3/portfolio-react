@@ -1,19 +1,36 @@
-// SISTEMARE LAYOUT
-
-import Skill from "./SkillItem";
+import SkillCard from "./SkillCard";
 
 function Skills() {
     const skills = [
-        {name: "HTML", src: "/images/logo-html.png", alt: "HTML"},
-        {name: "CSS", src: "/images/logo-css.png", alt: "CSS"},
-        {name: "Javascript", src: "/images/logo-js.png", alt: "Javascript"},
-        {name: "React JS", src: "/images/logo-react.png", alt: "React JS"},
-        {name: "Tailwind CSS", src: "/images/logo-tailwind.png", alt: "Tailwind CSS"},
-        {name: "Python", src: "/images/logo-python.png", alt: "Python"},
-        {name: "Java", src: "/images/logo-java.png", alt: "Java"},
-        {name: "SQL", src: "/images/logo-sql.png", alt: "SQL"},
-        {name: "MongoDB", src: "/images/logo-mongodb.png", alt: "MongoDB"},
-        {name: "VS Code", src: "/images/logo-vs.png", alt: "Visual Studio Code"},
+        {
+            icon: (
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-template-icon lucide-layout-template size-7 text-zinc-400">
+                    <rect width="18" height="7" x="3" y="3" rx="1"/><rect width="9" height="7" x="3" y="14" rx="1"/><rect width="5" height="7" x="16" y="14" rx="1"/>
+                </svg>
+            ),
+            name: "Sviluppo Front-end",
+            description: "Esperienza nello sviluppo di siti web responsive e moderni con: HTML, CSS, Javascipt, React, Tailwind CSS",
+        },
+
+        {
+            icon: (
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml-icon lucide-code-xml size-7 text-zinc-400">
+                    <path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/>
+                </svg>
+            ),
+            name: "Altri linguaggi",
+            description: "Esperienza base nei linguaggi di programmazione: Java, Python, C",
+        },
+
+        {
+            icon: (
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database-icon lucide-database size-7 text-zinc-400"><ellipse cx="12" cy="5" rx="9" ry="3"/>
+                    <path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/>
+                </svg>
+            ),
+            name: "Gestione database",
+            description: "Esperienza nella progettazione e gestione di Database relazionali come MySQL, e di database NoSQL come MongoDB a livello base",
+        },
 
     ];
 
@@ -27,9 +44,9 @@ function Skills() {
             </div>
 
             {/* Skills container */}
-            <div className="skills-container max-w-4xl grid grid-cols-4 gap-32">
+            <div className="skills-container grid grid-cols-1 md:grid-cols-2 gap-7 mx-auto max-w-5xl">
                 {skills.map((s) => (
-                    <Skill key={s.name} {...s} />
+                    <SkillCard key={s.name} {...s}/>
                 ))}
             </div>
         </section>
