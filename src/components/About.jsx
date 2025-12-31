@@ -23,8 +23,9 @@ function About() {
                     </p>
 
                     {/* Button */}
-                    <a href="/CV Francesco Spinella.pdf"
+                    <a href="/cv-francesco-spinella.pdf"
                         className="w-fit border rounded-md px-5 py-2 text-white hover:bg-white hover:text-black duration-300 ease-in"
+                        rel="noopener"
                         download="CV Francesco Spinella">
                             Download CV
                     </a>

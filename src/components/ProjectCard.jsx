@@ -1,7 +1,7 @@
 function ProjectCard( {name, preview, alt, description, type, webSiteLink }) {
     return (
         <div className="bg-[#1b1b1b] rounded-md border border-zinc-800 shadow-lg h-auto max-w-110 cursor-pointer hover:shadow-zinc-800 hover:border-zinc-700 duration-300 ease-in-out group overflow-hidden">
-            <a href={webSiteLink} target="_blank">
+            <a href={webSiteLink} target="_blank" rel="noopener">
                 <img 
                     src={preview} 
                     alt={name || alt} 
