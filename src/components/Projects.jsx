@@ -21,7 +21,7 @@ function Projects() {
     ];
 
     return (
-        <div id="projects" className="relative bg-[#151515] flex flex-col items-center py-24 p-5 gap-20 lg:p-24 lg:ml-80 lg:w-[calc(100%-320px)]">
+        <div id="projects" className="relative bg-[#151515] flex flex-col items-center py-24 px-5 gap-20 lg:ml-80 lg:w-[calc(100%-320px)]">
             {/* Heading projects */}
             <div className="heading-skills text-center">
                 <h2 className="text-white font-bold text-4xl md:text-5xl mb-4">Progetti</h2>
@@ -29,7 +29,7 @@ function Projects() {
             </div>
 
             {/* Projects container */}
-            <div className="projects-container grid grid-cols-1 md:grid-cols-2 gap-7">
+            <div className="projects-container grid grid-cols-1 md:grid-cols-2 gap-5">
                 {projects.map((p) => (
                     <ProjectCard key={p.name} {...p} />
                 ))}

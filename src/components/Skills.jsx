@@ -36,7 +36,7 @@ function Skills() {
 
 
     return (
-        <section id="skills" className="relative bg-[#1b1b1b] flex flex-col items-center py-24 p-5 gap-20 lg:p-24 lg:ml-80 lg:w-[calc(100%-320px)]">
+        <section id="skills" className="relative bg-[#1b1b1b] flex flex-col items-center py-24 px-5 gap-20 lg:ml-80 lg:w-[calc(100%-320px)]">
             {/* Heading skills */}
             <div className="heading-skills text-center">
                 <h2 className="text-white font-bold text-4xl md:text-5xl mb-4">Skills</h2>
@@ -44,7 +44,7 @@ function Skills() {
             </div>
 
             {/* Skills container */}
-            <div className="skills-container grid grid-cols-1 md:grid-cols-2 gap-7 mx-auto max-w-5xl">
+            <div className="skills-container grid grid-cols-1 md:grid-cols-2 gap-5 mx-auto max-w-5xl">
                 {skills.map((s) => (
                     <SkillCard key={s.name} {...s}/>
                 ))}
