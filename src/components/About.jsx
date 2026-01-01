@@ -7,7 +7,7 @@ function About() {
                     alt="Foto profilo"
                     loading="lazy"
                     draggable="false"
-                    className="h-125 w-auto rounded-md shadow-xl"
+                    className="h-auto w-full max-w-100 rounded-md shadow-xl"
                 />
                 {/* Description */}
                 <div className="description max-w-lg flex flex-col gap-7 text-white text-lg">
