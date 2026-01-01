@@ -39,8 +39,3 @@ function Projects() {
 }
 
 export default Projects;
-
-// Sito ufficiale dell’A.S.D. Polisportiva Gioiosa Futsal, la sezione dedicata al calcio a 5 
-// della società sportiva dilettantistica dell’A.S.D. Polisportiva Gioiosa. Il portale presenta informazioni istituzionali del club, 
-// il calendario completo e la classifica aggiornata del campionato, la storia della squadra. Il progetto è stato sviluppato in HTLM5, Tailwind CSS E Javascript vanilla,
-// successivamente ospitato su Siteground.
