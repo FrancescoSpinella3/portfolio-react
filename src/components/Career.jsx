@@ -3,10 +3,10 @@ import Experiences from "./Experiences";
 
 function Career() {
     return(
-        <section id="career" className="relative ml-80 w-[calc(100%-320px)] bg-[#1b1b1b] flex flex-col p-24 gap-14">
+        <section id="career" className="relative bg-[#1b1b1b] flex flex-col items-center py-24 p-5 gap-20 lg:p-24 lg:ml-80 lg:w-[calc(100%-320px)]">
             {/* Heading career */}
             <div className="heading-career text-center">
-                <h2 className="text-white font-bold text-5xl mb-4">Carriera</h2>
+                <h2 className="text-white font-bold text-4xl md:text-5xl mb-4">Carriera</h2>
                 <p className="text-zinc-300">La mia formazione ed esperienze lavorative</p>
             </div>
 

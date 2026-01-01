@@ -36,10 +36,10 @@ function Skills() {
 
 
     return (
-        <section id="skills" className="relative ml-80 w-[calc(100%-320px)] bg-[#1b1b1b] flex flex-col items-center p-24 gap-20">
+        <section id="skills" className="relative bg-[#1b1b1b] flex flex-col items-center py-24 p-5 gap-20 lg:p-24 lg:ml-80 lg:w-[calc(100%-320px)]">
             {/* Heading skills */}
             <div className="heading-skills text-center">
-                <h2 className="text-white font-bold text-5xl mb-4">Skills</h2>
+                <h2 className="text-white font-bold text-4xl md:text-5xl mb-4">Skills</h2>
                 <p className="text-gray-300">Tecnologie e Tools che utilizzo per sviluppare</p>
             </div>
 

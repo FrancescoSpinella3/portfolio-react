@@ -6,6 +6,7 @@ import Career from "./components/Career"
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import MobileNav from './components/MobileNav';
 
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
   return (
     <>
       <SideBar />
+
+      <MobileNav />
       
       <main>
 

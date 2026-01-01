@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer className="relative ml-80 w-[calc(100%-320px)] bg-[#101010] py-10 text-white">
+        <footer className="relative bg-[#101010] py-10 text-white lg:ml-80 lg:w-[calc(100%-320px)]">
             {/* Social */}
             <div className="social fill-white flex items-center justify-center gap-3 mb-5 *:size-7 *:hover:fill-zinc-400 *:duration-300 *:ease-out">
                 <a href="https://www.linkedin.com/in/francesco-spinella-969b13234/">

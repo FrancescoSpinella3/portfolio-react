@@ -1,13 +1,14 @@
 function SideBar() {
     return (
-        <aside className="bg-[#101010] h-screen w-80 p-5 flex items-center fixed border-r border-zinc-800">
+        <aside className="hidden bg-[#101010] h-screen w-80 p-5 lg:flex items-center fixed border-r border-zinc-800">
             <div className="container-sidebar flex flex-col items-start justify-between gap-12 pl-12 h-full">
                 {/* Logo */}
                 <a href="#home">
                     <img
                         className="h-16 w-auto mt-10" 
                         src="/logo.png" 
-                        alt="Logo Francesco Spinella" />
+                        alt="Logo Francesco Spinella" 
+                    />
                 </a>
 
                 {/* Links */}

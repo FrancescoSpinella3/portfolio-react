@@ -21,15 +21,15 @@ function Projects() {
     ];
 
     return (
-        <div id="projects" className="relative ml-80 w-[calc(100%-320px)] bg-[#151515] flex flex-col items-center p-24 gap-20">
+        <div id="projects" className="relative bg-[#151515] flex flex-col items-center py-24 p-5 gap-20 lg:p-24 lg:ml-80 lg:w-[calc(100%-320px)]">
             {/* Heading projects */}
             <div className="heading-skills text-center">
-                <h2 className="text-white font-bold text-5xl mb-4">Progetti</h2>
+                <h2 className="text-white font-bold text-4xl md:text-5xl mb-4">Progetti</h2>
                 <p className="text-gray-300">Alcuni dei miei progetti</p>
             </div>
 
             {/* Projects container */}
-            <div className="projects-container flex flex-wrap gap-7">
+            <div className="projects-container grid grid-cols-1 md:grid-cols-2 gap-7">
                 {projects.map((p) => (
                     <ProjectCard key={p.name} {...p} />
                 ))}
