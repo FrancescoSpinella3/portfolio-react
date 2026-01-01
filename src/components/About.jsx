@@ -3,7 +3,7 @@ function About() {
         <section id="about" className="flex relative bg-[#151515] lg:w-[calc(100%-320px)] lg:ml-80">
             <div className="flex flex-col mx-auto items-center gap-10 py-24 px-5 lg:flex-row">
                 {/* Image */}
-                <img src="/images/about-me.jpg" 
+                <img src="/images/about-me.webp" 
                     alt="Foto profilo"
                     loading="lazy"
                     draggable="false"

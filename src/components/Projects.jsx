@@ -4,7 +4,7 @@ function Projects() {
     const projects = [
         {
             name: "Gioiosa Futsal", 
-            preview: "/images/gioiosa-futsal-preview.jpg", 
+            preview: "/images/gioiosa-futsal-preview.webp", 
             description: "Sito ufficiale dell’A.S.D. Polisportiva Gioiosa Futsal, sezione dedicata al calcio a 5 della società sportiva dilettantistica Polisportiva Gioiosa. Il portale presenta informazioni istituzionali del club, il calendario completo, classifica aggiornata del campionato e la storia della squadra. Il progetto è stato sviluppato in HTLM5, Tailwind CSS e Javascript vanilla, successivamente ospitato su Siteground.", 
             gitHubLink: "https://github.com/FrancescoSpinella3/Gioiosa_Futsal.git",
             webSiteLink: "https://gioiosafutsal.it/",
