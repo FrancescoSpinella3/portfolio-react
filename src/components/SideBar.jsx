@@ -1,3 +1,11 @@
+const navLinks = [
+    {href: "#home", label: "Home"},
+    {href: "#about", label: "Chi sono"},
+    {href: "#skills", label: "Skills"},
+    {href: "#projects", label: "Progetti"},
+    {href: "#career", label: "Carriera"},
+];
+
 function SideBar() {
     return (
         <aside className="hidden bg-[#101010] h-screen w-80 p-5 lg:flex items-center fixed border-r border-zinc-800">
@@ -13,11 +21,11 @@ function SideBar() {
 
                 {/* Links */}
                 <ul className="nav-links text-white font-medium text-lg leading-10 *:hover:text-zinc-400 *:duration-300 *:ease-out">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Chi sono</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Progetti</a></li>
-                    <li><a href="#career">Carriera</a></li>
+                    {navLinks.map(link => (
+                        <li key={link.href}>
+                            <a href={link.href}>{link.label}</a>
+                        </li>
+                    ))}
                 </ul>
 
                 {/* Social */}
