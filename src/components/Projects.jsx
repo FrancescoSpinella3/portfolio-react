@@ -12,7 +12,7 @@ function Projects() {
         },
         {
             name: "Portfolio", 
-            preview: "/images/portfolio-preview.jpg", 
+            preview: "/images/portfolio-preview.webp", 
             description: "Portfolio personale sviluppato con React e Tailwind CSS, progettato per presentare in modo chiaro e moderno i miei progetti e le mie competenze. L’interfaccia è responsive e performante, con un design essenziale e particolare attenzione alla user experience e alla struttura di componenti riutilizzabili.", 
             gitHubLink: "https://github.com/FrancescoSpinella3/Gioiosa_Futsal.git", 
             webSiteLink: "",
