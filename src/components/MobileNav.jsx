@@ -34,7 +34,7 @@ function MobileNav() {
             </div>
 
             {/* Mobile menu */}
-            <div className={`w-75 h-screen bg-[#101010] fixed top-0 left-0 z-50 border-r border-zinc-800 p-5 flex flex-col gap-16 lg:hidden transform transition-transform duration-300 ease-in-out 
+            <div className={`w-75 h-screen bg-[#101010] fixed top-0 left-0 z-50 border-r border-zinc-800 p-7 flex flex-col gap-16 lg:hidden transform transition-transform duration-300 ease-in-out 
                 ${isOpen 
                     ? 'translate-x-0 pointer-events-auto' 
                     : '-translate-x-full pointer-events-none'}`} 
