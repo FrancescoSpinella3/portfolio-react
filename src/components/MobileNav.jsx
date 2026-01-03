@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const mobileNavLinks = [
     {href: "#home", label: "Home"},
@@ -8,11 +8,43 @@ const mobileNavLinks = [
     {href: "#career", label: "Carriera"},
 ];
 
+
 function MobileNav() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const menuRef = useRef(null);
+
+
+    // Change background class on window scroll
+    useEffect(() => {
+        const onScroll = () => setIsScrolled(window.scrollY > 750);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+        return () => window.removeEventListener('scroll', onScroll);
+
+    }, []);
+
+    const navBg = (isScrolled)
+    ? 'bg-[#151515]/70 backdrop-blur-xs border-b border-zinc-800'
+    : 'bg-transparent border-transparent';
+
+
+    // Close mobile menu on external click 
+    useEffect(() => {
+        if (!isOpen) return;
+        const handleOutsideClick = (e) => {
+            if (menuRef.current && !menuRef.current.contains(e.target)) {
+                setIsOpen(false);
+            }
+        };
+        
+        document.addEventListener('mousedown', handleOutsideClick);
+        return () => document.removeEventListener('mousedown', handleOutsideClick);
+    }, [isOpen]);
+
 
     return (
-        <nav className="fixed w-full flex items-center justify-between p-5 lg:hidden z-50 bg-[#151515]/70 backdrop-blur-xs border-b border-zinc-800">
+        <nav className={`fixed w-full flex items-center justify-between p-5 lg:hidden z-50 transition-all duration-200 ease-in-out ${navBg}`}>
             {/* Logo */}
             <a href="#home">
                 <img
@@ -34,7 +66,7 @@ function MobileNav() {
             </div>
 
             {/* Mobile menu */}
-            <div className={`w-75 h-screen bg-[#101010] fixed top-0 left-0 z-50 border-r border-zinc-800 p-7 flex flex-col gap-16 lg:hidden transform transition-transform duration-300 ease-in-out 
+            <div ref={menuRef} className={`w-75 h-screen bg-[#101010] fixed top-0 left-0 z-50 border-r border-zinc-800 p-7 flex flex-col gap-16 lg:hidden transform transition-transform duration-300 ease-in-out 
                 ${isOpen 
                     ? 'translate-x-0 pointer-events-auto' 
                     : '-translate-x-full pointer-events-none'}`} 
