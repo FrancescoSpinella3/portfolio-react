@@ -13,6 +13,7 @@ function MobileNav() {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const menuRef = useRef(null);
+    const burgerRef = useRef(null);
 
 
     // Change background class on window scroll
@@ -33,13 +34,19 @@ function MobileNav() {
     useEffect(() => {
         if (!isOpen) return;
         const handleOutsideClick = (e) => {
-            if (menuRef.current && !menuRef.current.contains(e.target)) {
+            const target = e.target;
+            if (
+                menuRef.current && !menuRef.current.contains(target) &&
+                !(burgerRef.current && burgerRef.current.contains(target))
+            ) {
                 setIsOpen(false);
             }
         };
-        
-        document.addEventListener('mousedown', handleOutsideClick);
-        return () => document.removeEventListener('mousedown', handleOutsideClick);
+
+        document.addEventListener('click', handleOutsideClick);
+        return () => {
+            document.removeEventListener('click', handleOutsideClick);
+        };
     }, [isOpen]);
 
 
@@ -56,6 +63,7 @@ function MobileNav() {
 
             {/* Burger menu */}
             <div 
+                ref={burgerRef}
                 className="burger-menu w-8 h-6 flex flex-col justify-center items-end gap-2 relative"
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label="Toggle menu"
