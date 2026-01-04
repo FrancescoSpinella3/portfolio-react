@@ -2,4 +2,4 @@ User-agent: *
 Disallow:
 
 # Sitemap
-Sitemap:
+Sitemap: https://www.francescospinella.dev/sitemap.xml
