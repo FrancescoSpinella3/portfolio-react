@@ -1,4 +1,4 @@
-import EducationItem from "./Educationitem";
+import EducationItem from "./EducationItem";
 
 function Education() {
     const educations = [
