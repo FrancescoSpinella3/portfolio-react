@@ -14,7 +14,7 @@ function SideBar() {
                 <a href="#home">
                     <img
                         className="h-16 w-auto mt-10"
-                        src="/logo.png"
+                        src="/logo.webp"
                         alt="Logo Francesco Spinella"
                     />
                 </a>
