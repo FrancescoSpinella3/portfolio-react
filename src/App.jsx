@@ -2,12 +2,13 @@ import './App.css'
 import SideBar from "./components/SideBar";
 import Hero from "./components/Hero"
 import About from "./components/About"
-import Career from "./components/Career"
-import Skills from './components/Skills';
-import Projects from './components/Projects';
 import Footer from './components/Footer';
 import MobileNav from './components/MobileNav';
+import { Suspense, lazy } from 'react'
 
+const Career = lazy(() => import('./components/Career'))
+const Skills = lazy(() => import('./components/Skills'))
+const Projects = lazy(() => import('./components/Projects'))
 
 function App() {
 
@@ -23,11 +24,17 @@ function App() {
 
         <About />
 
-        <Skills />
+        <Suspense fallback={<div className="sr-only">Caricamento...</div>}>
+          <Skills />
+        </Suspense>
 
-        <Projects />
+        <Suspense fallback={<div className="sr-only">Caricamento...</div>}>
+          <Projects />
+        </Suspense>
 
-        <Career />
+        <Suspense fallback={<div className="sr-only">Caricamento...</div>}>
+          <Career />
+        </Suspense>
 
       </main>
 
