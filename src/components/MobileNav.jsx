@@ -66,7 +66,6 @@ function MobileNav() {
                 ref={burgerRef}
                 className="burger-menu w-8 h-6 flex flex-col justify-center items-end gap-2 relative"
                 onClick={() => setIsOpen(!isOpen)}
-                aria-label="Toggle menu"
             >
                 <span className={`block h-0.5 w-7 bg-white rounded transform transition-all duration-300 ease-in-out origin-center ${isOpen ? "translate-y-3 rotate-45" : "translate-y-0 rotate-0"}`}></span>
                 <span className={`block h-0.5 w-6 bg-white rounded transform transition-all duration-300 ease-in-out ${isOpen ? "opacity-0" : "opacity-100"}`}></span>
@@ -78,7 +77,7 @@ function MobileNav() {
                 ${isOpen 
                     ? 'translate-x-0 pointer-events-auto' 
                     : '-translate-x-full pointer-events-none'}`} 
-                aria-hidden={!isOpen}
+                
             >
                 <div className="flex justify-between">
                     <img 
