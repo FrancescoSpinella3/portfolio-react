@@ -7,7 +7,9 @@ function Hero() {
 
                 {/* Button */}
                 <a 
-                    href="/CV Francesco Spinella.pdf"
+                    href="mailto:francescospinella76@gmail.com"
+                    rel="noopener" 
+                    noreferrer="true"
                     className="w-fit border rounded-md px-5 py-2 text-white text-lg hover:bg-white hover:text-black duration-300 ease-in">
                         Contattami
                 </a>
