@@ -1,4 +1,4 @@
-import ProjectCard from "./ProjectCard"
+import ProjectCard from "../Projects/ProjectCard"
 
 function Projects() {
     const projects = [

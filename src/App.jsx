@@ -6,9 +6,9 @@ import Footer from './components/Footer';
 import MobileNav from './components/MobileNav';
 import { Suspense, lazy } from 'react'
 
-const Career = lazy(() => import('./components/Career'))
-const Skills = lazy(() => import('./components/Skills'))
-const Projects = lazy(() => import('./components/Projects'))
+const Career = lazy(() => import('./components/Career/Career'))
+const Skills = lazy(() => import('./components/Skills/Skills'))
+const Projects = lazy(() => import('./components/Projects/Projects'))
 
 function App() {
 

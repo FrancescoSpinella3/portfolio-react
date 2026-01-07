@@ -1,5 +1,5 @@
-import Education from "./Educations";
-import Experiences from "./Experiences";
+import Education from "../Career/Educations";
+import Experiences from "../Career/Educations";
 
 function Career() {
     return(
