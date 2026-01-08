@@ -1,6 +1,6 @@
 function ProjectCard( {name, preview, alt, description, type, webSiteLink }) {
     return (
-        <div className="bg-[#1b1b1b] rounded-md border border-zinc-800 shadow-lg h-auto max-w-110 cursor-pointer hover:shadow-zinc-800 hover:border-zinc-700 duration-300 ease-in-out group overflow-hidden">
+        <div className="bg-[#1b1b1b] rounded-md border border-zinc-800 shadow-lg h-auto max-w-110 cursor-pointer hover:shadow-zinc-800 hover:border-zinc-700 duration-300 ease-in-out group overflow-hidden light:bg-zinc-100 light:border-zinc-400 light:hover:shadow-zinc-400 light:hover:border-zinc-500">
             <a href={webSiteLink} target="_blank" rel="noopener">
                 <img 
                     src={preview} 
@@ -12,10 +12,10 @@ function ProjectCard( {name, preview, alt, description, type, webSiteLink }) {
                 />
 
                 <div className="flex flex-col gap-4 p-5">
-                    <span className="text-sm text-zinc-400 font-semibold flex items-center gap-2">{type}</span>
-                    <h3 className="text-2xl text-white font-bold flex items-center gap-2">{name}</h3>
-                    <div className="bg-gray-50 h-px w-1/2 rounded"></div>
-                    <p className="text-zinc-300">{description}</p>
+                    <span className="text-sm text-zinc-400 font-semibold flex items-center gap-2 light:text-zinc-500">{type}</span>
+                    <h3 className="text-2xl text-white font-bold flex items-center gap-2 light:text-zinc-900">{name}</h3>
+                    <div className="bg-zinc-50 h-px w-1/2 rounded light:bg-zinc-800"></div>
+                    <p className="text-zinc-300 light:text-zinc-700">{description}</p>
                 </div>
             </a>
         </div>

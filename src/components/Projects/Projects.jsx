@@ -21,11 +21,11 @@ function Projects() {
     ];
 
     return (
-        <div id="projects" className="relative bg-[#151515] flex flex-col items-center py-24 px-5 gap-20 lg:ml-80 lg:w-[calc(100%-320px)]">
+        <div id="projects" className="relative bg-[#151515] flex flex-col items-center py-24 px-5 gap-20 lg:ml-80 lg:w-[calc(100%-320px)] light:bg-zinc-200">
             {/* Heading projects */}
             <div className="heading-skills text-center">
-                <h2 className="text-white font-bold text-4xl md:text-5xl mb-4">Progetti</h2>
-                <p className="text-gray-300">Alcuni dei miei progetti</p>
+                <h2 className="text-white font-bold text-4xl md:text-5xl mb-4 light:text-zinc-900">Progetti</h2>
+                <p className="text-zinc-300 light:text-zinc-700">Alcuni dei miei progetti</p>
             </div>
 
             {/* Projects container */}

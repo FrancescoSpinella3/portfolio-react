@@ -1,4 +1,6 @@
 import { useEffect, useState, useRef } from "react";
+import ThemeSwitcher from '../components/ThemeSwitcher';
+import { useTheme } from '../contexts/ThemeContext';
 
 const mobileNavLinks = [
     {href: "#home", label: "Home"},
@@ -14,6 +16,9 @@ function MobileNav() {
     const [isScrolled, setIsScrolled] = useState(false);
     const menuRef = useRef(null);
     const burgerRef = useRef(null);
+    const { theme } = useTheme();
+    // Use same logo everywhere: dark theme -> dark-logo, light theme -> logo
+    const logoSrc = theme === 'light' ? '/dark-logo.png' : '/logo.webp';
 
 
     // Change background class on window scroll
@@ -56,7 +61,7 @@ function MobileNav() {
             <a href="#home">
                 <img
                     className="h-8" 
-                    src="/logo.png" 
+                    src= "/logo.webp" 
                     alt="Logo Francesco Spinella" 
                 />
             </a>
@@ -73,7 +78,7 @@ function MobileNav() {
             </div>
 
             {/* Mobile menu */}
-            <div ref={menuRef} className={`w-75 h-screen bg-[#101010] fixed top-0 left-0 z-50 border-r border-zinc-800 p-7 flex flex-col gap-16 lg:hidden transform transition-transform duration-300 ease-in-out 
+            <div ref={menuRef} className={`w-75 h-screen bg-[#101010] fixed top-0 left-0 z-50 border-r border-zinc-800 p-7 flex flex-col gap-16 lg:hidden transform transition-transform duration-300 ease-in-out light:bg-zinc-300 light:border-zinc-400/50 
                 ${isOpen 
                     ? 'translate-x-0 pointer-events-auto' 
                     : '-translate-x-full pointer-events-none'}`} 
@@ -81,7 +86,7 @@ function MobileNav() {
             >
                 <div className="flex justify-between">
                     <img 
-                        src="/logo.png" 
+                        src={logoSrc} 
                         alt="Logo"
                         loading="lazy" 
                         draggable="false"
@@ -90,7 +95,7 @@ function MobileNav() {
                 </div>
 
                 {/* Links */}
-                <ul className="mobile-links text-white font-medium text-lg leading-12 border-y border-zinc-800 py-7 *:hover:text-zinc-400 *:duration-300 *:ease-out">
+                <ul className="mobile-links text-white font-medium text-lg leading-12 border-y border-zinc-800 py-7 *:hover:text-zinc-400 *:duration-300 *:ease-out light:text-zinc-900 light:border-zinc-400/50 ">
                     {mobileNavLinks.map(link => (
                         <li key={link.href}>
                             <a 
@@ -103,7 +108,7 @@ function MobileNav() {
                 </ul>
 
                 {/* Social */}
-                <div className="social text-white flex items-center gap-3 hover:text-zinc-400 duration-300 ease-out">
+                <div className="social text-white flex items-center gap-3 hover:text-zinc-400 duration-300 ease-out light:text-zinc-900">
                     <a href="https://www.linkedin.com/in/francesco-spinella-969b13234/" target="_blank" rel="noopener" noreferrer="true">
                         <svg xmlns="http://www.w3.org/2000/svg" aria-label="linkedin-logo" viewBox="0 0 640 640" className="size-6 fill-current"><path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/></svg>
                     </a>
@@ -117,6 +122,8 @@ function MobileNav() {
                         <svg xmlns="http://www.w3.org/2000/svg" aria-label="email" viewBox="0 0 640 640" className="size-6 fill-current"><path d="M125.4 128C91.5 128 64 155.5 64 189.4C64 190.3 64 191.1 64.1 192L64 192L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 192L575.9 192C575.9 191.1 576 190.3 576 189.4C576 155.5 548.5 128 514.6 128L125.4 128zM528 256.3L528 448C528 456.8 520.8 464 512 464L128 464C119.2 464 112 456.8 112 448L112 256.3L266.8 373.7C298.2 397.6 341.7 397.6 373.2 373.7L528 256.3zM112 189.4C112 182 118 176 125.4 176L514.6 176C522 176 528 182 528 189.4C528 193.6 526 197.6 522.7 200.1L344.2 335.5C329.9 346.3 310.1 346.3 295.8 335.5L117.3 200.1C114 197.6 112 193.6 112 189.4z"/></svg>
                     </a>
                 </div>
+
+                <ThemeSwitcher />
             </div>
         </nav>
     );

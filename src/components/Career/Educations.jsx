@@ -1,4 +1,4 @@
-import EducationItem from "./ExperienceItem";
+import EducationItem from "./EducationItem";
 
 function Education() {
     const educations = [
@@ -23,7 +23,7 @@ function Education() {
     ];
 
     return (
-        <div className="education bg-[#151515] flex flex-col p-7 text-white rounded-md w-full max-w-5xl mx-auto md:p-14">
+        <div className="education bg-[#151515] flex flex-col p-7 text-white rounded-md w-full max-w-5xl mx-auto md:p-14 light:bg-zinc-200 light:text light:text-zinc-900">
             <h3 className="font-bold text-3xl md:text-4xl flex gap-5 items-center pb-8">
                 Formazione
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-10">
