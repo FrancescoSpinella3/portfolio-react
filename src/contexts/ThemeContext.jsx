@@ -15,9 +15,9 @@ export function ThemeProvider({ children }) {
             }
 
             // If there is not a saved theme, check system preferences
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
                 console.log("Sistema operativo preferisce dark mode");
-                return 'light';
+                return 'dark';
             }
 
             console.log("Default: light mode");
