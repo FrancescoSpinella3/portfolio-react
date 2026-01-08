@@ -11,9 +11,9 @@ function ThemeSwitcher() {
             aria-label="Switch theme"
         >
             {theme === 'light' ? (
-                <Moon className="size-5 text-zinc-900 dark:text-white" />
+                <Moon className="size-5 text-white" />
             ) : (
-                <Sun className="size-5 text-zinc-900 dark:text-white" />
+                <Sun className="size-5 text-white" />
             )}
         </button>
     );
