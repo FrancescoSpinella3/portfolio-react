@@ -8,7 +8,6 @@ export function ThemeProvider({ children }) {
     const [theme, setTheme ] = useState(() => {
         try {
             const savedTheme = localStorage.getItem('theme');
-            console.log("Tema salvato nel localStorage: ", savedTheme);
 
             if (savedTheme && (savedTheme === 'dark' || savedTheme === 'light')) {
                 return savedTheme;
@@ -16,21 +15,16 @@ export function ThemeProvider({ children }) {
 
             // If there is not a saved theme, check system preferences
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                console.log("Sistema operativo preferisce dark mode");
                 return 'dark';
             }
 
-            console.log("Default: light mode");
             return 'dark';
         } catch (error) {
-            console.error("Errore nel recupero del tema: ", error);
             return 'dark';
         }
     });
 
     useEffect(() => {
-        console.log("Applicando tema: ", theme);
-
         // Save theme on localStorage
         try {
             localStorage.setItem('theme', theme);
@@ -43,22 +37,15 @@ export function ThemeProvider({ children }) {
 
         if (theme === 'light') {
             htmlElement.classList.add('light');
-            console.log("Classe dark aggiunta");
         } else {
             htmlElement.classList.remove('light');
-            console.log("Classe dark rimossa");
         }
-
-        // Debug: show current classes
-        console.log("Classi HTML attuali: ", htmlElement.className);
 
     }, [theme]);
 
     function toggleTheme() {
-        console.log("Toggle tema da: ", theme);
         setTheme(prevTheme => {
             const newTheme = prevTheme === 'dark' ? 'light' : 'dark';
-            console.log("Nuovo tema: ", newTheme);
             return newTheme;
         });
     }
