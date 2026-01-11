@@ -1,4 +1,6 @@
 import SkillCard from "../Skills/SkillCard";
+import Tools from "./Tools";
+
 
 function Skills() {
     const skills = [
@@ -49,6 +51,8 @@ function Skills() {
                     <SkillCard key={s.name} {...s}/>
                 ))}
             </div>
+
+            <Tools />
         </section>
     );
 }

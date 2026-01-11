@@ -10,3 +10,26 @@
 ::-webkit-scrollbar-track {background: #1b1b1b;}
 ::-webkit-scrollbar-thumb {background: #2f2f2f; border-radius: 6px;}
 ::-webkit-scrollbar-thumb:hover { background: #616161; }
+
+/* Nasconde la scrollbar orizzontale nel blocco .tools (compatibile con i principali browser) */
+.tools::-webkit-scrollbar {
+  display: none;
+}
+
+@layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE e Edge */
+  }
+  .no-scrollbar::-webkit-scrollbar { display: none; } /* Chrome, Safari, Opera */
+
+  .animate-scroll { animation: translate-spin 20s linear infinite; }
+
+  @keyframes translate-spin {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+
+
+
