@@ -9,7 +9,8 @@ const tools = [
     { name: "SQL", src: "/images/logo-tools/sql.png" },
     { name: "MySql", src: "/images/logo-tools/mysql.png" },
     { name: "MongoDB", src: "/images/logo-tools/mongo-db.png" },
-    { name: "VS Code", src: "/images/logo-tools/vscode.png" }
+    { name: "VS Code", src: "/images/logo-tools/vscode.png" },
+    { name: "Git", src: "/images/logo-tools/git.png" }
 ];
 
 function Tools() {
