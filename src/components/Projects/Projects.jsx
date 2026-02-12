@@ -17,6 +17,13 @@ function Projects() {
             gitHubLink: "https://github.com/FrancescoSpinella3/Gioiosa_Futsal.git", 
             webSiteLink: "https://www.francescospinella.dev/",
             type: "Sito web"
+        },
+        {
+            name: "myFinance", 
+            preview: "/images/myfinance-preview.webp", 
+            description: "Applicazione web per la gestione delle finanze personali, sviluppata in React. Permette autenticazione utenti, registrare e visualizzare transazioni, categorizzarle e monitorare il proprio bilancio in modo intuitivo. Il codice è organizzato in moduli chiari che facilitano estensioni future e potenziali integrazioni.", 
+            gitHubLink: "https://github.com/FrancescoSpinella3/personal-financial-manager.git", 
+            type: "Web App - In fase di sviluppo"
         }
     ];
 
@@ -29,7 +36,7 @@ function Projects() {
             </div>
 
             {/* Projects container */}
-            <div className="projects-container grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="projects-container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
                 {projects.map((p) => (
                     <ProjectCard key={p.name} {...p} />
                 ))}

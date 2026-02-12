@@ -1,7 +1,7 @@
-function ProjectCard( {name, preview, alt, description, type, webSiteLink }) {
+function ProjectCard( {name, preview, alt, description, type, webSiteLink, gitHubLink }) {
     return (
         <div className="bg-[#1b1b1b] rounded-md border border-zinc-800 shadow-lg h-auto max-w-110 cursor-pointer hover:shadow-zinc-800 hover:border-zinc-700 duration-300 ease-in-out group overflow-hidden light:bg-zinc-100 light:border-zinc-400 light:hover:shadow-zinc-400 light:hover:border-zinc-500">
-            <a href={webSiteLink} target="_blank" rel="noopener">
+            <a href={webSiteLink || gitHubLink} target="_blank" rel="noopener">
                 <img 
                     src={preview} 
                     alt={name || alt} 
